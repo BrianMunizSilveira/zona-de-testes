@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>header</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.1rem;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: 10px;
+            background-color: #FF4081;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center; /* Alinha os itens verticalmente */
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2979FF;
+        }
+
+        li > a:hover {
+            color: #FFEB3B;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul li:first-child,
+            nav ul li:last-child {
+                display: none; /* Esconder as imagens nos primeiros e últimos itens */
+            }
+
+            nav ul {
+                justify-content: space-between; /* Espaço entre os itens */
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <header class="topo">
+            <nav>
+                <ul>
+                    <li><img src="logo.png" alt="Logo" title="Logo"></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ARTIGOS</a></li>
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="#">QUEM SOMOS</a></li>
+                    <li><img src="logo.png" alt="Logo" title="Logo"></li>
+                </ul>
+            </nav>
+        </header>
+    </main>
+</body>
+
+</html>

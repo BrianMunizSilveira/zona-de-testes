@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        :root {
+
+            --cor0: #D97184;
+            --cor1: #BF0436;
+            --cor2: #590219; 
+            --cor3: #8C0428;
+            --cor4: #0D0D0D;
+        }
+
+        body {
+            background-color: var(--cor4);
+        }
+
+        main {
+            min-width: 200px;
+            max-width: 800px;
+
+            margin: auto;
+        }
+
+
+        header > h1 sub {
+            color: var(--cor3);
+        }
+
+        h1, sub {
+            margin: auto;
+        }
+
+        article, h1 {
+            background-color: var(--cor1);
+            color: #fff;
+        }
+        
+        article, p {
+            margin: 10px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        ul {
+            background-color: var(--cor3);
+            color: #fff;
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Desafio de responsividade</h1>
+            <h2>Instruções</h2>
+            <ul>
+                <li>1 - Mantenha o layout centralizado horizontalmente em todas as resoluções de tela.</li>
+                <li>2 - Faça com que o texto tenha uma margem maior em telas menores, para melhorar a legibilidade.</li>
+                <li>3 - Altere o tamanho da fonte para que seja mais legível em telas menores, mantendo-a agradável de ler em telas maiores.</li>
+                <li>4 - Faça com que a imagem se ajuste de forma adequada em telas de diferentes tamanhos, mantendo sua proporção.</li>
+                <li>5 - Adicione uma quebra de linha após a imagem em telas menores, para evitar que o texto fique muito próximo dela.</li>
+            </ul>
+        </header>
+
+        <section>
+            <article>
+                <h1>Scar-Responsivo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid quisquam nemo assumenda consequatur illum eveniet temporibus molestiae eligendi debitis? Sunt, porro! Optio quaerat quisquam veritatis, nostrum alias similique ab.</p>
+                <br>
+                <picture>
+                    <source media="(max-width: 980px)" srcset="https://pm1.aminoapps.com/7030/67b9ef1cc14db954047d4125ca021c1e1088e048r1-640-640v2_uhq.jpg">
+                    <img src="https://www.bilesuserviss.lv/userfiles/file/%20SCARLXRD_2.jpg" alt="Scarlxrd">
+                </picture>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa omnis, qui quasi commodi unde veritatis! Esse eligendi porro optio quae explicabo in animi eveniet, aspernatur est unde magni inventore eos natus atque numquam magnam, culpa sed autem hic cupiditate nesciunt? Itaque nostrum aut tempore sequi dolores dicta libero molestiae autem.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --cor0: #003366;
+    --cor1: #66CCFF;
+    --cor2: #FF6600;
+    --cor3: #ff0000;
+
+    --fonte0: "Roboto", sans-serif;
+    --fonte1: "Lato", sans-serif;
+}
+
+/*Eestilos globais*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+/*Estilo para o cabeçalho*/
+header {
+    padding-top: 25px;
+    text-align: center;
+}
+
+/*Estilo menu de navegação*/
+nav {
+    margin-top: 3em;
+    text-align: left;
+}
+
+nav a {
+    margin: 20px; 
+    color: var(--cor1);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    color: var(--cor3);
+    background-image:linear-gradient(to right, var(--cor0), transparent);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+main {
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*Estilo para imagem*/
+img {
+    width: 80%;
+    height: 80%;
+}
+
+/*Estilo para os artigos*/
+article {
+    margin: auto;
+    padding: 1.5em;
+    line-height: 1.5em;
+    background-color: #001242;
+}
+
+article > p {
+    background-color: #001242;
+}
+
+article h2, h3 {
+    padding: 7px;
+    background-color: #001242;
+}
+
+/*Estilo para o Roda-Pé*/
+footer {
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+i {
+    margin-left: 5px;
+}

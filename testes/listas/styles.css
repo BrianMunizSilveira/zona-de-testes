@@ -1,0 +1,14 @@
+.custom-list {
+    list-style: none;
+  }
+  
+  .link-externo::before {
+    content: "🌐 ";
+    color: blue;
+  }
+  
+  .item-lista::before {
+    content: "📖 ";
+    color: green;
+  }
+  

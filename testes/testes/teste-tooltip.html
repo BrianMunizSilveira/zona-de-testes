@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mostrar texto ao passar o mouse</title>
+<style>
+    .tooltip {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 5px;
+        display: none;
+        transition: 1s;
+        width: 350px;
+    }
+</style>
+</head>
+<body>
+
+<ul>
+    <li class="link"><a href="https://www.hostnet.com.br/" target="_blank">Hostnet</a></li>
+
+    <li class="link"><a href="https://vercel.com" target="_blank" title="A Vercel é uma plataforma de hospedagem que se concentra em oferecer hospedagem para aplicativos front-end e back-end em JavaScript, Node.js e outras tecnologias modernas. Eles fornecem ferramentas poderosas para implantação, escalabilidade e gerenciamento de aplicativos da web.">Vercel</a></li>
+
+    <li class="link"><a href="https://www.hostgator.com.br/" target="_blank" title="A HostGator é uma empresa de hospedagem globalmente reconhecida, oferecendo uma variedade de serviços de hospedagem compartilhada, VPS (Servidor Virtual Privado), servidores dedicados e hospedagem na nuvem. Eles são conhecidos por sua confiabilidade e suporte ao cliente.">Host Gator</a></li>
+
+    <li class="link"><a href="https://sqarecloud.app" target="_blank" title="O SqareCloud é uma plataforma de hospedagem que se concentra em oferecer hospedagem para aplicativos e sites baseados em WordPress. Eles oferecem recursos de hospedagem gerenciada, incluindo backups automáticos, atualizações de segurança e otimização de desempenho.">Square Cloud</a></li>
+
+    <li class="link"><a href="https://br.000webhost.com/" target="_blank" title=" O 000webhost é um provedor de hospedagem gratuito que oferece recursos básicos de hospedagem para sites e aplicativos pequenos. Eles fornecem uma opção acessível para indivíduos e pequenas empresas que estão começando na web e não têm orçamento para hospedagem paga.">000Webhost</a></li>
+</ul>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+    const links = document.querySelectorAll('.link a');
+
+    links.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            const title = link.getAttribute('title');
+            const tooltip = document.getElementById('tooltip');
+            tooltip.textContent = title;
+            tooltip.style.display = 'block';
+            tooltip.style.top = `${link.offsetTop + link.offsetHeight}px`;
+            tooltip.style.left = `${link.offsetLeft}px`;
+        });
+
+        link.addEventListener('mouseout', () => {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'none';
+        });
+    });
+</script>
+
+</body>
+</html>
