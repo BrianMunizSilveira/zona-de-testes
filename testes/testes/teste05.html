@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de Passar o Mouse Sobre um Link</title>
-    <style>
-        .hostnet-info {
-            display: none;
-        }
-
-        .hostnet-link:hover+.hostnet-info {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="hostnet-container">
-        <a href="#" class="hostnet-link">Hostnet</a>
-        <div class="hostnet-info">
-            A Hostnet é uma empresa brasileira de hospedagem que oferece uma variedade de serviços de hospedagem,
-            incluindo hospedagem compartilhada, hospedagem WordPress, servidores virtuais e servidores dedicados. Eles
-            são conhecidos por seu suporte técnico especializado e infraestrutura de alta qualidade.
-        </div>
+    <a href="#" id="hostnet-link">Hostnet</a>
+
+    <div id="hostnet-info" class="hidden">
+        A Hostnet é uma empresa brasileira de hospedagem que oferece uma variedade de serviços de hospedagem, incluindo hospedagem compartilhada, hospedagem WordPress, servidores virtuais e servidores dedicados. Eles são conhecidos por seu suporte técnico especializado e infraestrutura de alta qualidade.
     </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>

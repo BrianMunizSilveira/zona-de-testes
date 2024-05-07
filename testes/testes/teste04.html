@@ -1,81 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="DevDecfalter">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <title>Teste04</title>
-
+    <title>Exemplo de Passar o Mouse Sobre um Link</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            outline: 0;
+        .hostnet-info {
+            display: none;
         }
 
-        body {
-            font-family: 'Red Hat Mono', monospace;
-            background-color: #065143;
-        }
-
-        p {
-            color: #CACF85;
-        }
-
-        h2 {
-            color: #7776BC;
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        header {
-            background-color: #CACF85;
-            margin: 2rem;
-            padding: 1rem;
-        }
-
-        ul {
-            list-style: none;
-        
-        }
-
-        article .btn a{
-            margin: 15px;
-            padding: 50px 100px;
-            font-size: 3.25rem;
+        .hostnet-link:hover+.hostnet-info {
+            display: block;
         }
     </style>
-
 </head>
 
 <body>
-    <main>
-        <section>
-            <article>
-                <header>
-                    <h2>Teste04</h2>
-                    <nav>
-                        <ul class="nav-links">
-                            <a href="#">Link - 1</a>
-                            <a href="#">Link - 2</a>
-                            <a href="#">Link - 3</a>
-                            <a href="#">Link - 4</a>
-                        </ul>
-                    </nav>
-                </header>
-                <h2>Clique nos botões</h2>
-                <a class="btn">
-                   <a href="#"></a><i class="ri-github-line"></i></a>
-                    <a href="#"></a><i class="ri-youtube-line"></i></a>
-                    <a href="#"></a><i class="ri-twitter-line"></i></a>
-                </article>
-            </article>
-        </section>
-    </main>
-</body> 
+    <div class="hostnet-container">
+        <a href="#" class="hostnet-link">Hostnet</a>
+        <div class="hostnet-info">
+            A Hostnet é uma empresa brasileira de hospedagem que oferece uma variedade de serviços de hospedagem,
+            incluindo hospedagem compartilhada, hospedagem WordPress, servidores virtuais e servidores dedicados. Eles
+            são conhecidos por seu suporte técnico especializado e infraestrutura de alta qualidade.
+        </div>
+    </div>
+
+</body>
 
 </html>
