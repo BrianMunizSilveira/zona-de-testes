@@ -1,42 +1,53 @@
 @charset "UTF-8";
 
+/* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* Definição de variáveis de cor e fonte */
 :root {
     --cor0: #003366;
     --cor1: #66CCFF;
     --cor2: #FF6600;
     --cor3: #ff0000;
-
     --fonte0: "Roboto", sans-serif;
     --fonte1: "Lato", sans-serif;
 }
 
-/*Eestilos globais*/
+/* Estilos globais */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    background-color: #000;
     color: #fff;
 }
 
-/*Estilo para o cabeçalho*/
+body {
+    background-color: #000;
+}
+
+/* Estilo para o cabeçalho */
 header {
     padding-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
-/*Estilo menu de navegação*/
+header > h1 {
+    margin: 10px;
+    padding: 5px;
+    line-height: 35px;
+}
+
+/* Estilo do menu de navegação */
 nav {
-    margin-top: 3em;
+    margin-top: 2em;
     text-align: left;
 }
 
 nav a {
-    margin: 20px; 
+    margin: 30px;
+    padding: 10px; 
     color: var(--cor1);
     text-decoration: none;
     transition-duration: 0.5s;
@@ -44,43 +55,51 @@ nav a {
 
 nav a:hover {
     color: var(--cor3);
-    background-image:linear-gradient(to right, var(--cor0), transparent);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
     transition-duration: 0.5s;
     border-radius: 10px;
 }
 
+/* Estilo para o conteúdo principal */
 main {
     min-width: 400px;
     max-width: 1000px;
     margin: auto;
 }
 
-/*Estilo para imagem*/
+/* Estilo para imagens */
 img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
 }
 
-/*Estilo para os artigos*/
+sub {
+    font-size: 1em;
+}
+
+/* Estilo para os artigos */
 article {
     margin: auto;
     padding: 1.5em;
-    line-height: 1.5em;
     background-color: #001242;
 }
 
 article > p {
     background-color: #001242;
+    font-size: 1.3rem;
+    line-height: 1.7em;
 }
 
-article h2, h3 {
+article h1, h2 {
     padding: 7px;
+    margin-bottom: 15px;
     background-color: #001242;
 }
 
-/*Estilo para o Roda-Pé*/
+/* Estilo para o rodapé */
 footer {
     color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -88,10 +107,16 @@ footer a {
     text-decoration: none;
     color: #fff;
     justify-content: center;
+    margin: 15px;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+ul {
+    padding: 10px;
+    margin: 5px;
 }
 
 ul li {
@@ -101,4 +126,38 @@ ul li {
 
 i {
     margin-left: 5px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+        line-height: 1.4em;
+    }
+
+    header > h2 {
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    sub {
+        font-size: 16px;
+    }
+
+    article {
+        font-size: 18px;
+        line-height: 1.7em;
+    }
+
+    article, h1, h2 {
+        font-size: 1.3em;
+        margin: 10px;
+    }
 }
