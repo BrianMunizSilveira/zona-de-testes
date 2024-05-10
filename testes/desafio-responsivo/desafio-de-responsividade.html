@@ -7,6 +7,9 @@
     <title>Desafio</title>
 
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
         * {
             padding: 0px;
             margin: 0px;
@@ -19,6 +22,9 @@
             --cor2: #590219; 
             --cor3: #8C0428;
             --cor4: #0D0D0D;
+            --cor5: #9D4EDD;
+
+            --font0: "Sedan SC", serif ;
         }
 
         body {
@@ -28,26 +34,27 @@
         main {
             min-width: 200px;
             max-width: 800px;
-
             margin: auto;
         }
 
-
-        header > h1 sub {
-            color: var(--cor3);
-        }
-
-        h1, sub {
-            margin: auto;
-        }
-
-        article, h1 {
-            background-color: var(--cor1);
+        h1{
             color: #fff;
+            background-color: var(--cor3);
+            text-align: center;
+            margin: auto;
+        }
+
+        article {
+            background-color: var(--cor3);
+            font-family: var(--font0);
+            margin: 10px;
+            color: #fff;
+            font-size: 20px;
         }
         
         article, p {
             margin: 10px;
+            line-height: 1.8em;
         }
 
         img {
@@ -55,19 +62,59 @@
         }
 
         ul {
-            background-color: var(--cor3);
+            background-color: var(--cor1);
             color: #fff;
             list-style-type: none;
+            padding: 10px;
+            line-height: 1.5em;
+        }
+        
+        .container h1 {
+            padding: 7px;
+            font-size: 2em;
         }
 
+        .container {
+            padding-bottom: 10px;
+        }
+
+        footer {
+            padding: 5px;
+            margin: 10px;
+            color: #fff;
+        }
+
+        footer a {
+            color: var(--cor5);
+            text-decoration: none;
+            text-align: center;
+            margin: auto;
+        }
+
+        footer a:hover {
+            color: var(--cor1);
+            transition-duration: 0.5s;
+            text-decoration: underline;
+        }   
+
+        @media (max-width: 600px)  {
+            article {
+                padding: 10px;
+            }
+
+            p {
+                text-align: justify;
+                line-height: 1.8em;
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <main>
         <header>
-            <h1>Desafio de responsividade</h1>
-            <h2>Instruções</h2>
+            <h1>Instruções</h1>
             <ul>
                 <li>1 - Mantenha o layout centralizado horizontalmente em todas as resoluções de tela.</li>
                 <li>2 - Faça com que o texto tenha uma margem maior em telas menores, para melhorar a legibilidade.</li>
@@ -78,18 +125,20 @@
         </header>
 
         <section>
-            <article>
-                <h1>Scar-Responsivo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid quisquam nemo assumenda consequatur illum eveniet temporibus molestiae eligendi debitis? Sunt, porro! Optio quaerat quisquam veritatis, nostrum alias similique ab.</p>
-                <br>
+            <article class="container">
+                <h1>Scarlxrd</h1>
+                <p>Scarlxrd é o pseudônimo artístico de Marius Lucas-Antonio Listhrop, um artista britânico conhecido por sua música no gênero trap metal. Nascido em 19 de junho de 1994, Scarlxrd começou sua carreira como YouTuber e rapper sob o nome Mazzi Maz. No entanto, ele ganhou reconhecimento internacional após adotar o alter ego Scarlxrd e mudar drasticamente seu estilo musical e visual.</p>
+                <p>A música de Scarlxrd é caracterizada por batidas pesadas, vocais agressivos e letras muitas vezes obscuras e introspectivas. Ele mescla elementos de trap, metal e rap em suas músicas, criando um som único que ressoa com uma ampla base de fãs.</p>
                 <picture>
-                    <source media="(max-width: 980px)" srcset="https://pm1.aminoapps.com/7030/67b9ef1cc14db954047d4125ca021c1e1088e048r1-640-640v2_uhq.jpg">
-                    <img src="https://www.bilesuserviss.lv/userfiles/file/%20SCARLXRD_2.jpg" alt="Scarlxrd">
+                    <source media="(max-width: 400px)" srcset="800px-Scarlxrd.jpg">
+                    <img src="Scarlxrd.jpg" alt="Scarlxrd">
                 </picture>
                 <br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa omnis, qui quasi commodi unde veritatis! Esse eligendi porro optio quae explicabo in animi eveniet, aspernatur est unde magni inventore eos natus atque numquam magnam, culpa sed autem hic cupiditate nesciunt? Itaque nostrum aut tempore sequi dolores dicta libero molestiae autem.</p>
+                <p>Além de sua música, Scarlxrd é conhecido por sua imagem distintiva, que inclui cabelos longos e trançados, além de roupas e acessórios que refletem sua estética única.</p>
+                <p>Desde o início de sua carreira como Scarlxrd, ele lançou vários álbuns e mixtapes, como "DXXM", "Infinity", "IMMXRTALISATIXN" e outros, ganhando uma base de fãs dedicada e continuando a evoluir seu som e estilo ao longo do tempo.</p>
             </article>
         </section>
+        <footer>By: <a href="https://github.com/BrianMunizSilveira" target="_blank">Brian Muniz - 09/05/24</a></footer>
     </main>
 </body>
 
