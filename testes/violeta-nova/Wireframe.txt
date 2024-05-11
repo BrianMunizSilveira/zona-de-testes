@@ -1,0 +1,53 @@
+# Página do Pseudo-Artista
+
+## Cabeçalho
+- Logo
+- Menu de Navegação
+
+## Banner
+- Imagem ou Vídeo Promocional
+- Texto de Boas-vindas
+
+## Seção de Biografia
+- Foto do Artista
+- Breve Biografia
+- Botão "Saiba Mais"
+
+## Seção de Músicas
+- Lista de Músicas Populares
+- Botões de Reprodução ou Links para Streaming
+
+## Seção de Agenda
+- Próximos Eventos ou Shows
+- Detalhes dos Eventos (Data, Local, etc.)
+
+## Seção de Contato
+- Formulário de Contato
+- Redes Sociais
+
+## Rodapé
+- Links de Navegação Adicionais
+- Informações de Contato
+
+
+====================
+
+Nome do Artista: Violeta Nova
+
+Biografia:
+
+Violeta Nova é uma cantora e compositora fictícia, cuja música transcende gêneros e fronteiras. Com sua voz única e letras profundas, ela cativa seus ouvintes e os transporta para um mundo de sonhos e reflexões. Nascida em uma pequena cidade, Violeta descobriu sua paixão pela música desde cedo e começou a escrever suas próprias canções aos 15 anos. Sua jornada musical a levou a explorar diferentes estilos, desde o indie até o eletrônico, mas sempre mantendo sua essência autêntica.
+
+Músicas Populares:
+
+"Purple Dreams"
+"Midnight Serenade"
+"Echoes of Silence"
+"Starlit Reverie"
+"Enchanted Melody"
+
+Agenda:
+
+Próximo Show: 25 de Maio de 2024 - Teatro da Cidade, Nova York
+10 de Junho de 2024 - Festival de Verão, Los Angeles
+30 de Junho de 2024 - Tour Europeia: Londres, Paris, Berlim
