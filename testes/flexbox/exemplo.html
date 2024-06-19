@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos padrão */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+            background-color: lightgray;
+        }
+
+        .header, .footer {
+            background-color: darkgray;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+
+        .sidebar, .content {
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: lightblue;
+        }
+
+        .content {
+            background-color: lightcoral;
+        }
+
+        /* Estilos para telas com largura mínima de 768px */
+        @media (min-width: 768px) {
+            .main-content {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                flex: 1;
+            }
+
+            .content {
+                flex: 3;
+            }
+        }
+
+        /* Estilos para telas com largura mínima de 1024px */
+        @media (min-width: 1024px) {
+            .container {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Website Responsivo</h1>
+        </div>
+        <div class="main-content">
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Conteúdo da barra lateral.</p>
+            </div>
+            <div class="content">
+                <h2>Conteúdo Principal</h2>
+                <p>Conteúdo principal do site.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Rodapé do site</p>
+        </div>
+    </div>
+</body>
+</html>

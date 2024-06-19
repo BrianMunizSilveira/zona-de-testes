@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    border: 4px solid #000;
+    overflow: hidden;
+}
+
+.item {
+    background-color: #f0f0f0;
+    border: 5px solid #ccc;
+    text-align: center;
+    transition: all 0.5s;
+    text-align: justify;
+}
+
+.item:hover {
+    background-color: aquamarine;
+    color: red;
+}
